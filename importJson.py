@@ -1,7 +1,7 @@
 import json
 import csv
 
-for i in range(1980,2015): 
+for i in range(1980,2016): 
     with open("groundtruth//" + str(i) + ".txt", "r") as json_file:
             string = json_file.read()
             json_object = string.split('}')
