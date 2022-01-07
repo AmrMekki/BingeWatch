@@ -42,7 +42,7 @@ def frameOne():
             "font-size: 15px;" +
             "color: '#132733';" +
             "padding: 10px 0;" +
-            "margin-top: 400px;" +
+            "margin-top: 700px;" +
             "margin: 150px 150px;}" +
             "*:hover{background: '#D35A26';}" 
 
