@@ -24,7 +24,7 @@ watchWindow.setStyleSheet("background: #FFFDD0;")
 
 def frameOne():
       #display logo
-      helloPotato = QPixmap("helloApp.png")
+      helloApp = QPixmap("helloApp.png")
       welcomeImg = QLabel()
       welcomeImg.setPixmap(helloApp)
       welcomeImg.setAlignment(QtCore.Qt.AlignCenter)
