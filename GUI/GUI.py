@@ -26,7 +26,7 @@ def frameOne():
       #display logo
       helloPotato = QPixmap("helloApp.png")
       welcomeImg = QLabel()
-      welcomeImg.setPixmap(helloPotato)
+      welcomeImg.setPixmap(helloApp)
       welcomeImg.setAlignment(QtCore.Qt.AlignCenter)
       welcomeImg.setStyleSheet("margin-top: 200px;")
       widgets["images"].append(welcomeImg)
