@@ -13,18 +13,18 @@ widgets = {
       "images" : [],
       "buttons" : []
 }
-potatoApp = QApplication(sys.argv)
+watchApp = QApplication(sys.argv)
 grid = QGridLayout()
 #window and settings
-potatoWindow = QWidget()
-potatoWindow.setWindowTitle("Hey, potato is here!")
-potatoWindow.setFixedSize(500,600)
+watchWindow = QWidget()
+watchWindow.setWindowTitle("Stay in Theater")
+watchWindow.setFixedSize(500,600)
 # potatoWindow.move(4000, 200)     #position of the window may vary depending on screen size
-potatoWindow.setStyleSheet("background: #FFFDD0;")
+watchWindow.setStyleSheet("background: #FFFDD0;")
 
 def frameOne():
       #display logo
-      helloPotato = QPixmap("hello.png")
+      helloPotato = QPixmap("helloApp.png")
       welcomeImg = QLabel()
       welcomeImg.setPixmap(helloPotato)
       welcomeImg.setAlignment(QtCore.Qt.AlignCenter)
@@ -55,9 +55,9 @@ def frameOne():
 
 frameOne()
 
-potatoWindow.setLayout(grid)
-potatoWindow.show()
-sys.exit(potatoApp.exec())
+watchWindow.setLayout(grid)
+watchWindow.show()
+sys.exit(watchApp.exec())
 
 #     msg = input("Enter msg to potato: ")
 
