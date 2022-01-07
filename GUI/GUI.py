@@ -28,12 +28,12 @@ def frameOne():
       welcomeImg = QLabel()
       welcomeImg.setPixmap(helloApp)
       welcomeImg.setAlignment(QtCore.Qt.AlignCenter)
-      welcomeImg.setStyleSheet("margin-bottom: 200px;")
+      welcomeImg.setStyleSheet("margin-bottom: 300px;")
       widgets["images"].append(welcomeImg)
 
       #add button
       startButton = QPushButton("Try binge watch.")
-      startButton.setGeometry(200, 150, 100, 30)
+      startButton.setGeometry(200, 300, 100, 30)
       startButton.setCursor(QCursor(QtCore.Qt.PointingHandCursor))
       startButton.setStyleSheet(
             "*{border: 2px solid '#E1865F';" +
@@ -42,7 +42,7 @@ def frameOne():
             "font-size: 15px;" +
             "color: '#132733';" +
             "padding: 10px 0;" +
-            "margin-top: 700px;" +
+            "margin-top: 100px;" +
             "margin: 150px 150px;}" +
             "*:hover{background: '#D35A26';}" 
 
