@@ -22,6 +22,21 @@ watchWindow.setFixedSize(500,600)
 # potatoWindow.move(4000, 200)     #position of the window may vary depending on screen size
 watchWindow.setStyleSheet("background: #FFFDD0;")
 
+
+def openFileNamesDialog():
+        options = QFileDialog.Options()
+        options |= QFileDialog.DontUseNativeDialog
+        files, _ = QFileDialog.getOpenFileNames("QFileDialog.getOpenFileNames()", "","All Files (*);;Python Files (*.py)", options=options)
+        if files:
+            print(files)
+            
+def saveFileDialog():
+    options = QFileDialog.Options()
+    options |= QFileDialog.DontUseNativeDialog
+    fileName, _ = QFileDialog.getSaveFileName("","All Files (*);;Text Files (*.txt)", options=options)
+    if fileName:
+        print(fileName)
+        
 def frameOne():
       #display logo
       helloApp = QPixmap("helloApp.png")
@@ -48,6 +63,9 @@ def frameOne():
 
       )
       widgets["buttons"].append(startButton)
+      
+      openFileNamesDialog()
+      saveFileDialog()
 
       #add widgets to the grid
       grid.addWidget(widgets["images"][-1],0,0)
