@@ -6,6 +6,8 @@ moviesDB = imdb.IMDb()
 
 movies = moviesDB.search_movie('titanic')
 
+
+
     
 id = movies[0].getID()
 movie = moviesDB.get_movie(id)
