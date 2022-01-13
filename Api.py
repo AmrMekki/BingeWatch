@@ -6,10 +6,13 @@ moviesDB = imdb.IMDb()
 
 movies = moviesDB.search_movie('titanic')
 
-print('Searching for "titanic": ')
-for movie in movies:
-    title = movie['title']
-    year = movie['year']
-    print(f'{title} - {year}')
     
-    
+id = movies[0].getID()
+movie = moviesDB.get_movie(id)
+
+title = movie['title']
+year = movie['year']
+genre = movie['genre']
+
+print("movie info: ")
+print(f"{title} -{year} - {genre}")
