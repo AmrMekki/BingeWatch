@@ -10,7 +10,7 @@ class DialogApp(QWidget):
         
         
 
-		self.button1 = QPushButton('Upload image')
+		self.button1 = QPushButton('Upload a movie poster')
 		self.button1.clicked.connect(self.get_image_file)
 
 
