@@ -16,8 +16,6 @@ grid = QGridLayout()
 watchWindow = QWidget()
 watchWindow.setWindowTitle("Stay in Theater")
 watchWindow.setFixedSize(500,600)
-# potatoWindow.move(4000, 200)     #position of the window may vary depending on screen size
-watchWindow.setStyleSheet("background: #FFFDD0;")
+watchWindow.setStyleSheet("background: #6434eb;")
 
 
-/
