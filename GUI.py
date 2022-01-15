@@ -19,3 +19,8 @@ watchWindow.setFixedSize(500,600)
 watchWindow.setStyleSheet("background: #6434eb;")
 
 
+watchWindow.setLayout(grid)
+watchWindow.show()
+sys.exit(watchApp.exec())
+
+
